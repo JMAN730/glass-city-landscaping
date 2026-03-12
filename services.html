@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional landscaping services in Toledo, Ohio. Landscape design, lawn care, hardscaping, and snow removal by Glass City Landscaping.">
+    <title>Our Services | Glass City Landscaping & Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2d5a27;
+            --secondary: #4a7c44;
+            --accent: #f4b400;
+            --neutral: #f9fbf9;
+            --text-dark: #1b261b;
+            --text-light: #5a6b5a;
+            --white: #ffffff;
+            --earth: #5d4037;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+
+        nav {
+            background: var(--white);
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        .logo i { margin-right: 10px; color: var(--secondary); }
+        .logo span { color: var(--earth); }
+
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { margin-left: 35px; }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            transition: var(--transition);
+            text-transform: uppercase;
+            font-size: 0.95rem;
+        }
+        .nav-links a:hover, .nav-links a.active { color: var(--secondary); }
+
+        .page-header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1599110906251-70332306f157?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 100px 5%;
+            text-align: center;
+        }
+
+        .page-header h1 { font-size: 3.5rem; margin-bottom: 15px; }
+
+        .services-detail { padding: 100px 5%; }
+
+        .service-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 100px;
+            align-items: center;
+        }
+
+        .service-block:nth-child(even) { direction: rtl; }
+        .service-block:nth-child(even) .service-content { direction: ltr; }
+
+        .service-img img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .service-content h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .service-content p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 25px;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .feature-list li {
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+            font-weight: 500;
+        }
+
+        .feature-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .cta-banner {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 80px 5%;
+            text-align: center;
+            border-radius: 20px;
+            margin: 0 5% 100px;
+        }
+
+        .cta-banner h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: var(--transition);
+            text-transform: uppercase;
+        }
+
+        .btn-accent { background-color: var(--accent); color: var(--text-dark); }
+        .btn-accent:hover { background-color: var(--white); transform: translateY(-3px); }
+
+        footer {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 80px 5% 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 50px;
+        }
+
+        .footer-col h3 { margin-bottom: 25px; color: var(--accent); }
+        .footer-col a { color: #d1d1d1; text-decoration: none; }
+        .footer-bottom { text-align: center; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 50px; }
+
+        @media (max-width: 900px) {
+            .service-block { grid-template-columns: 1fr; gap: 40px; }
+            .service-block:nth-child(even) { direction: ltr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo"><i class="fas fa-leaf"></i>Glass City <span>Landscaping</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>Transform Your Outdoors</h1>
+        <p>Comprehensive landscaping solutions for residential and commercial properties.</p>
+    </header>
+
+    <main class="services-detail">
+        <section class="service-block">
+            <div class="service-img">
+                <img src="https://images.unsplash.com/photo-1558904541-efa8c196b27d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Landscape Design">
+            </div>
+            <div class="service-content">
+                <h2>Landscape Design & Install</h2>
+                <p>We believe every home deserves a unique outdoor identity. Our designers work with you to create a cohesive plan that complements your architecture and lifestyle.</p>
+                <ul class="feature-list">
+                    <li>3D Landscape Renderings</li>
+                    <li>Flower Bed Design & Planting</li>
+                    <li>Privacy Hedge Installation</li>
+                    <li>Eco-friendly Native Gardens</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="service-block">
+            <div class="service-img">
+                <img src="https://images.unsplash.com/photo-1592150621344-78439b73484c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lawn Care">
+            </div>
+            <div class="service-content">
+                <h2>Lawn Care Excellence</h2>
+                <p>Keep your lawn healthy, green, and weed-free throughout the Ohio seasons. Our systematic approach ensures your turf thrives year-round.</p>
+                <ul class="feature-list">
+                    <li>Weekly Mowing & Trimming</li>
+                    <li>6-Step Fertilization Program</li>
+                    <li>Core Aeration & Overseeding</li>
+                    <li>Sod Installation</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="service-block">
+            <div class="service-img">
+                <img src="https://images.unsplash.com/photo-1531834685032-c74696a67fd0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Hardscaping">
+            </div>
+            <div class="service-content">
+                <h2>Hardscaping & Masonry</h2>
+                <p>Extend your living space outdoors with durable and beautiful stone work. We specialize in high-quality paver installations and retaining walls.</p>
+                <ul class="feature-list">
+                    <li>Paver Patios & Walkways</li>
+                    <li>Retaining & Garden Walls</li>
+                    <li>Custom Fire Pits</li>
+                    <li>Outdoor Kitchen Foundations</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="service-block">
+            <div class="service-img">
+                <img src="https://images.unsplash.com/photo-1547113110-333333333333?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Snow Removal">
+            </div>
+            <div class="service-content">
+                <h2>Snow & Ice Management</h2>
+                <p>Toledo winters can be unpredictable. Our fleet is ready 24/7 to ensure your driveway and parking lots are clear and safe when the snow starts falling.</p>
+                <ul class="feature-list">
+                    <li>Residential Driveway Plowing</li>
+                    <li>Commercial Parking Lot Clearing</li>
+                    <li>Sidewalk Shoveling & De-icing</li>
+                    <li>Salt Application</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="cta-banner">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Join hundreds of satisfied Toledo residents. Get your free estimate today.</p>
+            <a href="contact.html" class="btn btn-accent" style="margin-top: 20px;">Request a Quote</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color: var(--white); margin-bottom: 20px;"><i class="fas fa-leaf"></i>Glass City</a>
+                <p>Your local Toledo landscaping experts since 2011.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>Toledo, OH 43604</p>
+                <p>(419) 555-0123</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Glass City Landscaping & Design. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
