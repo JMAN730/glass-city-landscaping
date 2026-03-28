@@ -357,7 +357,30 @@
         }
 
         @media (max-width: 768px) {
-            .nav-links { display: none; }
+            nav { height: 70px; padding: 0 15px; }
+            .logo { font-size: 1.2rem; }
+            .logo-img { height: 30px; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: white;
+                padding: 20px 0;
+                box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+                text-align: center;
+            }
+            .nav-links li { margin: 15px 0; }
+            .nav-links a { font-size: 1.1rem; }
+            .mobile-menu-btn { display: block; font-size: 1.8rem; }
+            .hero-content h1 { font-size: 2.2rem; line-height: 1.2; }
+            .hero-content p { font-size: 1rem; margin-bottom: 25px; }
+            .btn { width: 100%; margin: 8px 0 !important; padding: 15px 20px; font-size: 0.9rem; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; gap: 30px; }
+            .social-links { justify-content: center; }
+        }
             .mobile-menu-btn { display: block; }
             .hero-content h1 { font-size: 2.5rem; }
             .hero-content p { font-size: 1.1rem; }
@@ -477,20 +500,7 @@
     </footer>
 
     <script>
-        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
-            const nav = document.querySelector('.nav-links');
-            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-            if(nav.style.display === 'flex') {
-                nav.style.flexDirection = 'column';
-                nav.style.position = 'absolute';
-                nav.style.top = '90px';
-                nav.style.left = '0';
-                nav.style.width = '100%';
-                nav.style.background = 'white';
-                nav.style.padding = '20px';
-                nav.style.boxShadow = '0 10px 10px rgba(0,0,0,0.1)';
-            }
-        });
+document.querySelector('.mobile-menu-btn').addEventListener('click', () => {            const navLinks = document.querySelector('.nav-links');            const icon = document.querySelector('.mobile-menu-btn i');                        if (navLinks.style.display === 'flex') {                navLinks.style.display = 'none';                icon.className = 'fas fa-bars';            } else {                navLinks.style.display = 'flex';                icon.className = 'fas fa-times';            }        });
     </script>
 </body>
 </html>

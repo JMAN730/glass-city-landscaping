@@ -283,5 +283,18 @@
             this.reset();
         });
     </script>
+<script>
+        document.querySelector(".mobile-menu-btn").addEventListener("click", () => {
+            const navLinks = document.querySelector(".nav-links");
+            const icon = document.querySelector(".mobile-menu-btn i");
+            if (navLinks.style.display === "flex") {
+                navLinks.style.display = "none";
+                icon.className = "fas fa-bars";
+            } else {
+                navLinks.style.display = "flex";
+                icon.className = "fas fa-times";
+            }
+        });
+    </script>
 </body>
 </html>
