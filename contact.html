@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Glass City Landscaping & Design for a free estimate on your next landscaping project in Toledo, Ohio.">
-    <title>Contact Us | Glass City Landscaping & Design</title>
+    <meta name="description" content="Contact Glass&thinsp;City Landscaping & Design for a free estimate on your next landscaping project in Toledo, Ohio.">
+    <title>Contact Us | Glass&thinsp;City Landscaping & Design</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        .logo-img { height: 40px; width: auto; vertical-align: middle; margin-right: -5px; }
+        .footer-logo-img { height: 40px; width: auto; vertical-align: middle; margin-right: -5px; filter: invert(1) brightness(2); mix-blend-mode: screen; }
         :root {
             --primary: #2d5a27;
             --secondary: #4a7c44;
@@ -35,7 +37,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 5%;
+            padding: 0 1%;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -156,19 +158,15 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo"><i class="fas fa-leaf"></i>Glass City <span>Landscaping</span></a>
+        <a href="index.html" class="logo"><img src="use this.png" alt="Logo" class="logo-img">lass&thinsp;City&nbsp;<span>Landscaping</span></a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
+            
             <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
     </nav>
 
-    <header class="page-header">
-        <h1>Get a Free Estimate</h1>
-        <p>Let's discuss your next outdoor project.</p>
-    </header>
 
     <main>
         <div class="contact-container">
@@ -255,15 +253,15 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
-                <a href="index.html" class="logo" style="color: var(--white); margin-bottom: 20px;"><i class="fas fa-leaf"></i>Glass City</a>
-                <p>Proudly serving the Glass City since 2011.</p>
+                <a href="index.html" class="logo" style="color: var(--white); margin-bottom: 20px; "><img src="use this.png" alt="Logo" class="footer-logo-img">lass&thinsp;City&nbsp;</a>
+                <p>Proudly serving the Glass&thinsp;City since 2011.</p>
             </div>
             <div class="footer-col">
                 <h3>Links</h3>
                 <ul>
                     <li><a href="index.html" style="color:#d1d1d1; text-decoration:none;">Home</a></li>
                     <li><a href="services.html" style="color:#d1d1d1; text-decoration:none;">Services</a></li>
-                    <li><a href="about.html" style="color:#d1d1d1; text-decoration:none;">About Us</a></li>
+                    
                     <li><a href="contact.html" style="color:#d1d1d1; text-decoration:none;">Contact</a></li>
                 </ul>
             </div>
@@ -274,14 +272,14 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Glass City Landscaping & Design. All rights reserved.</p>
+            <p>&copy; 2026 Glass&thinsp;City Landscaping & Design. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your request! A representative from Glass City Landscaping will contact you shortly for your free estimate.');
+            alert('Thank you for your request! A representative from Glass&thinsp;City Landscaping will contact you shortly for your free estimate.');
             this.reset();
         });
     </script>

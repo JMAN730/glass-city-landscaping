@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Glass City Landscaping & Design - Premier landscaping, lawn care, and snow removal services in Toledo, Ohio. Transform your outdoor space today.">
+    <meta name="description" content="Glass&thinsp;City Landscaping & Design - Premier landscaping, lawn care, and snow removal services in Toledo, Ohio. Transform your outdoor space today.">
     <meta name="keywords" content="landscaping toledo ohio, lawn care toledo, snow removal toledo, landscape design, glass city landscaping">
-    <meta property="og:title" content="Glass City Landscaping & Design | Toledo, OH">
+    <meta property="og:title" content="Glass&thinsp;City Landscaping & Design | Toledo, OH">
     <meta property="og:description" content="Expert landscaping and lawn maintenance for Toledo homeowners and businesses.">
-    <title>Glass City Landscaping & Design | Toledo, Ohio's Premier Landscapers</title>
+    <title>Glass&thinsp;City Landscaping & Design | Toledo, Ohio's Premier Landscapers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        .logo-img { height: 40px; width: auto; vertical-align: middle; margin-right: -5px; }
+        .footer-logo-img { height: 40px; width: auto; vertical-align: middle; margin-right: -5px; filter: invert(1) brightness(2); mix-blend-mode: screen; }
         :root {
             --primary: #2d5a27; /* Deep Forest Green */
             --secondary: #4a7c44; /* Leaf Green */
@@ -44,7 +46,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 5%;
+            padding: 0 1%;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -104,7 +106,7 @@
         /* Hero Section */
         .hero {
             height: 85vh;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1558904541-efa8c196b27d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('Headerimage.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -112,7 +114,7 @@
             justify-content: center;
             text-align: center;
             color: var(--white);
-            padding: 0 5%;
+            padding: 0 1%;
         }
 
         .hero-content {
@@ -232,28 +234,6 @@
             color: var(--primary);
         }
 
-        /* About Section Snippet */
-        .about-brief {
-            padding: 100px 5%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-        }
-
-        .about-img img {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 20px 20px 0 var(--secondary);
-        }
-
-        .about-text h2 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 25px;
-        }
-
-        .about-text p {
             font-size: 1.1rem;
             color: var(--text-light);
             margin-bottom: 30px;
@@ -373,7 +353,6 @@
         /* Responsive */
         @media (max-width: 1024px) {
             .hero-content h1 { font-size: 3rem; }
-            .about-brief { grid-template-columns: 1fr; gap: 40px; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
         }
 
@@ -388,11 +367,11 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo"><i class="fas fa-leaf"></i>Glass City <span>Landscaping</span></a>
+        <a href="index.html" class="logo"><img src="use this.png" alt="Logo" class="logo-img">lass&thinsp;City&nbsp;<span>Landscaping</span></a>
         <ul class="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
+            
             <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
@@ -401,7 +380,7 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>Breathtaking Landscapes for the Glass City</h1>
+                <h1>Breathtaking Landscapes for the Glass&thinsp;City</h1>
                 <p>Toledo's trusted experts in custom landscape design, lawn maintenance, and year-round outdoor care.</p>
                 <div class="hero-btns">
                     <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
@@ -434,17 +413,6 @@
             </div>
         </section>
 
-        <section class="about-brief">
-            <div class="about-img">
-                <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Beautiful Landscaped Garden">
-            </div>
-            <div class="about-text">
-                <h2>Quality You Can See, Service You Can Trust</h2>
-                <p>For over 15 years, Glass City Landscaping & Design has been transforming yards across Northwest Ohio into stunning outdoor retreats. We combine horticultural expertise with creative design to deliver results that exceed expectations.</p>
-                <p>As a family-owned local business, we take pride in every blade of grass and every stone we place. Your satisfaction is our top priority.</p>
-                <a href="about.html" class="btn btn-primary" style="background-color: var(--primary);">Learn Our Story</a>
-            </div>
-        </section>
 
         <section class="testimonials">
             <div class="section-header">
@@ -452,7 +420,7 @@
             </div>
             <div class="testimonial-grid">
                 <div class="t-card">
-                    <p>"Glass City transformed our backyard into an oasis. The attention to detail was incredible. Highly recommend for any landscape project!"</p>
+                    <p>"Glass&thinsp;City transformed our backyard into an oasis. The attention to detail was incredible. Highly recommend for any landscape project!"</p>
                     <h4>— Jennifer M., Sylvania</h4>
                 </div>
                 <div class="t-card">
@@ -470,7 +438,7 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
-                <a href="index.html" class="logo" style="color: var(--white); margin-bottom: 20px;"><i class="fas fa-leaf"></i>Glass City</a>
+                <a href="index.html" class="logo" style="color: var(--white); margin-bottom: 20px; "><img src="use this.png" alt="Logo" class="footer-logo-img">lass&thinsp;City&nbsp;</a>
                 <p>Serving Toledo, Perrysburg, Sylvania, and surrounding areas with excellence in landscaping and outdoor design.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -483,7 +451,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -504,7 +472,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Glass City Landscaping & Design. All rights reserved. Built with passion for Northwest Ohio.</p>
+            <p>&copy; 2026 Glass&thinsp;City Landscaping & Design. All rights reserved. Built with passion for Northwest Ohio.</p>
         </div>
     </footer>
 
