@@ -1,0 +1,11 @@
+{
+  "name": "fernando-landscaping",
+  "version": "1.0.0",
+  "description": "Fernando Landscaping & Design — Charlotte, NC's premier landscaping, lawn care, and snow removal services.",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "license": "UNLICENSED"
+}
